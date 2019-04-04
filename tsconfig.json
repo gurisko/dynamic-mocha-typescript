@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "target": "es2017",
+    "types": ["node"],
+    "outDir": "dist"
+  },
+  "types": [ "mocha", "node", "selenium-webdriver" ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

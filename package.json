@@ -1,0 +1,33 @@
+{
+  "name": "dynamic-mocha-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf ./dist/*",
+    "lint": "./node_modules/.bin/tslint -c ./tslint.json -p tsconfig.json 'src/**/*.ts' --format stylish",
+    "mocha": "mocha -t 30000 dist/index.js",
+    "test": "npm run clean && npm run tsc && npm run mocha",
+    "tsc": "./node_modules/.bin/tsc",
+    "watch": "npm run clean && NODE_ENV=development ./node_modules/.bin/tsc-watch --onSuccess \"npm run mocha\""
+  },
+  "pre-commit": [
+    "lint",
+    "tsc"
+  ],
+  "author": "Matus Gura",
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.6",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^2.6.3",
+    "tsc": "^1.20150623.0",
+    "tsc-watch": "^2.1.2",
+    "tslint": "^5.14.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "mocha": "^6.0.2"
+  }
+}
