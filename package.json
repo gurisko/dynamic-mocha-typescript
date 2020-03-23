@@ -1,6 +1,6 @@
 {
   "name": "dynamic-mocha-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -17,17 +17,16 @@
   ],
   "author": "Matus Gura",
   "devDependencies": {
-    "@types/mocha": "^5.2.6",
-    "@types/node": "^11.11.6",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.9.3",
     "pre-commit": "^1.2.2",
-    "rimraf": "^2.6.3",
-    "tsc": "^1.20150623.0",
-    "tsc-watch": "^2.1.2",
-    "tslint": "^5.14.0",
-    "tslint-config-airbnb": "^5.11.1",
-    "typescript": "^3.3.4000"
+    "rimraf": "^3.0.2",
+    "tsc-watch": "^4.2.3",
+    "tslint": "^6.1.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^7.1.1"
   }
 }
